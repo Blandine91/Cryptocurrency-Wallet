@@ -97,28 +97,28 @@ candidate_database = {
         "0xaC8eB8B2ed5C4a0fC41a84Ee4950F417f67029F0",
         "4.3",
         0.20,
-        "Images/lane.jpeg",
+        "Images/lane.jpeg"
     ],
     "Ash": [
         "Ash",
         "0x2422858F9C4480c2724A309D58Ffd7Ac8bF65396",
         "5.0",
         0.33,
-        "Images/ash.jpeg",
+        "Images/ash.jpeg"
     ],
     "Jo": [
         "Jo",
         "0x8fD00f170FDf3772C5ebdCD90bF257316c69BA45",
         "4.7",
         0.19,
-        "Images/jo.jpeg",
+        "Images/jo.jpeg"
     ],
     "Kendall": [
         "Kendall",
         "0x8fD00f170FDf3772C5ebdCD90bF257316c69BA45",
         "4.1",
         0.16,
-        "Images/kendall.jpeg",
+        "Images/kendall.jpeg"
     ],
 }
 
@@ -178,7 +178,7 @@ st.sidebar.write(account.address)
 # Call `get_balance` function and pass it your account address
 # Write the returned ether balance to the sidebar
 # YOUR CODE HERE
-ether = get_balance(account.address)
+ether = get_balance(w3, account.address)
 
 st.sidebar.markdown("## Your Balance of Ether")
 st.sidebar.markdown(ether)
